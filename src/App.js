@@ -22,7 +22,7 @@ export default function App() {
         return;
       }
       
-      const response = await axios.post('http://localhost:5000/bfhl', parsedData);
+      const response = await axios.post('https://bajaj-backend-five-cyan.vercel.app/bfhl', parsedData);
       setResponseData(response.data);
     } catch (error) {
       console.error(error);
